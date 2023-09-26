@@ -1,0 +1,30 @@
+pipeline:
+  name: shantelleGit
+  identifier: shantelleGit
+  projectIdentifier: Shantelle_Project
+  orgIdentifier: UX_Team
+  tags: {}
+  stages:
+    - stage:
+        name: sampleCustom
+        identifier: sampleCustom
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: ShellScript
+                  name: ShellScript_1
+                  identifier: ShellScript_1
+                  spec:
+                    shell: Bash
+                    onDelegate: true
+                    source:
+                      type: Inline
+                      spec:
+                        script: echo "helo"
+                    environmentVariables: []
+                    outputVariables: []
+                  timeout: 10m
+        tags: {}
