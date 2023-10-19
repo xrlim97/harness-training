@@ -1,7 +1,7 @@
     variables:
       - name: input_runtime
         type: String
-        value: ""
+        value: "abc"
       - name: input_set_name2
         type: String
         value: val2
