@@ -43,3 +43,9 @@ pipeline:
                   timeout: <+input>
         tags: {}
   allowStageExecutions: true
+  variables:
+    - name: runtime_input
+      type: String
+      description: ""
+      required: true
+      value: <+input>
