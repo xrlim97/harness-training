@@ -43,9 +43,9 @@ inputSet:
                               type: String
                               value: ""
     variables:
-      - name: input_set_name
+      - name: runtime_input
         type: String
-        value: ""
+        value: "aa"
       - name: input_set_name2
         type: String
         value: val2
