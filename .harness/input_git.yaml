@@ -1,1 +1,10 @@
-
+    variables:
+      - name: input_runtime
+        type: String
+        value: ""
+      - name: input_set_name2
+        type: String
+        value: val2
+      - name: input_set_name3
+        type: String
+        value: val3
