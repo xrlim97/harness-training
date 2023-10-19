@@ -1,7 +1,51 @@
+inputSet:
+  name: input_git
+  tags: {}
+  identifier: input_git
+  orgIdentifier: default
+  projectIdentifier: Shantelle_Project
+  pipeline:
+    identifier: shantelleGit
+    stages:
+      - stage:
+          identifier: child
+          type: Pipeline
+          variables:
+            - name: test234
+              type: String
+              value: <+input>.executionInput()
+      - stage:
+          identifier: deploystage
+          type: Deployment
+          spec:
+            execution:
+              steps:
+                - step:
+                    identifier: rolloutDeployment
+                    type: K8sRollingDeploy
+                    timeout: ""
+            services:
+              values: ""
+      - stage:
+          identifier: template
+          template:
+            templateInputs:
+              type: Custom
+              spec:
+                execution:
+                  steps:
+                    - step:
+                        identifier: httpstep
+                        type: Http
+                        spec:
+                          inputVariables:
+                            - name: testinput
+                              type: String
+                              value: ""
     variables:
-      - name: input_runtime
+      - name: input_set_name
         type: String
-        value: "abc"
+        value: ""
       - name: input_set_name2
         type: String
         value: val2
