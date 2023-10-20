@@ -1,0 +1,22 @@
+inputSet:
+  name: normalinput
+  identifier: normalinput
+  orgIdentifier: UX_Team
+  projectIdentifier: Shantelle_Project
+  pipeline:
+    identifier: shantelleGit
+    stages:
+      - stage:
+          identifier: sampleCustom
+          type: Custom
+          spec:
+            execution:
+              steps:
+                - step:
+                    identifier: ShellScript_2
+                    type: ShellScript
+                    timeout: 10s
+    variables:
+      - name: runtime_input
+        type: String
+        value: normalinput
