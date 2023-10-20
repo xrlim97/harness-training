@@ -1,0 +1,9 @@
+overlayInputSet:
+  name: sampleoverlay
+  identifier: sampleoverlay
+  orgIdentifier: UX_Team
+  projectIdentifier: Shantelle_Project
+  pipelineIdentifier: shantelleGit
+  inputSetReferences:
+    - input_git
+  tags: {}
