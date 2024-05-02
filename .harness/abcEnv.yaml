@@ -2,7 +2,8 @@ environment:
   name: abcEnv
   identifier: abcEnv
   description: ""
-  tags: {}
+  tags:
+    a: ""
   type: PreProduction
   orgIdentifier: UX_Team
   projectIdentifier: Shantelle_Project
